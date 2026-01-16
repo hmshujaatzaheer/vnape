@@ -1,0 +1,115 @@
+/* V-NAPE Custom Documentation Styles */
+
+/* Color scheme */
+:root {
+    --vnape-primary: #2563eb;
+    --vnape-secondary: #7c3aed;
+    --vnape-success: #10b981;
+    --vnape-warning: #f59e0b;
+    --vnape-danger: #ef4444;
+}
+
+/* Improve code block readability */
+.highlight {
+    background: #f8fafc !important;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Better table styling */
+.rst-content table.docutils {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.rst-content table.docutils th {
+    background-color: var(--vnape-primary);
+    color: white;
+    font-weight: 600;
+}
+
+.rst-content table.docutils td,
+.rst-content table.docutils th {
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.rst-content table.docutils tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* Admonition styling */
+.admonition.note {
+    background: #eff6ff;
+    border-left: 4px solid var(--vnape-primary);
+}
+
+.admonition.warning {
+    background: #fffbeb;
+    border-left: 4px solid var(--vnape-warning);
+}
+
+.admonition.danger {
+    background: #fef2f2;
+    border-left: 4px solid var(--vnape-danger);
+}
+
+/* API documentation improvements */
+dl.py.class,
+dl.py.function,
+dl.py.method {
+    padding: 1em;
+    background: #f8fafc;
+    border-radius: 6px;
+    margin-bottom: 1.5em;
+}
+
+/* Parameter styling */
+.sig-param {
+    font-style: italic;
+}
+
+/* Return type styling */
+.sig-return-typehint {
+    color: var(--vnape-secondary);
+}
+
+/* Logo area */
+.wy-side-nav-search {
+    background: linear-gradient(135deg, var(--vnape-primary), var(--vnape-secondary));
+}
+
+/* Navigation improvements */
+.wy-menu-vertical a {
+    font-size: 0.95em;
+}
+
+.wy-menu-vertical li.current > a {
+    background: rgba(37, 99, 235, 0.1);
+    border-left: 3px solid var(--vnape-primary);
+}
+
+/* Footer */
+footer {
+    background: #1e293b;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 768px) {
+    .wy-nav-content {
+        padding: 1em;
+    }
+    
+    .rst-content table.docutils {
+        font-size: 0.85em;
+    }
+}
+
+/* Syntax highlighting improvements */
+.highlight .k { color: #2563eb; }  /* Keywords */
+.highlight .kn { color: #2563eb; } /* Keyword namespace */
+.highlight .s { color: #059669; }  /* Strings */
+.highlight .mi { color: #d97706; } /* Numbers */
+.highlight .c1 { color: #64748b; } /* Comments */
+.highlight .nc { color: #7c3aed; } /* Class names */
+.highlight .nf { color: #0891b2; } /* Function names */
