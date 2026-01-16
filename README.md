@@ -27,29 +27,6 @@ V-NAPE (Verified Neural Adaptive Proactive Enforcement) is a research framework 
 - **Extensible architecture** for custom protocol definitions
 - **Certificate generation** for verified policy refinements
 
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                         V-NAPE Framework                         │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  ┌──────────────┐     ┌──────────────┐     ┌──────────────────┐ │
-│  │     NPA      │────▶│     SVB      │────▶│      PQAE        │ │
-│  │   Neural     │     │  Symbolic    │     │   Proactive      │ │
-│  │   Policy     │     │ Verification │     │  Quantum-Aware   │ │
-│  │  Adaptation  │     │    Bridge    │     │  Enforcement     │ │
-│  └──────────────┘     └──────────────┘     └──────────────────┘ │
-│         │                    │                      │            │
-│         ▼                    ▼                      ▼            │
-│  ┌──────────────┐     ┌──────────────┐     ┌──────────────────┐ │
-│  │ Transformer  │     │  Z3 Solver   │     │ MFOTL Monitor    │ │
-│  │  Encoder     │     │  Integration │     │ + Enforcer       │ │
-│  └──────────────┘     └──────────────┘     └──────────────────┘ │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
-```
-
 ## Installation
 
 ### From PyPI (when published)
